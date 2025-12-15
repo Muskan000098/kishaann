@@ -13,7 +13,7 @@ const BuySell = () => {
 
   const fetchProducts = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/products");
+      const res = await fetch("https://kishaann-backend.onrender.com/api/products");
       const data = await res.json();
 
       if (data.success) {
@@ -43,7 +43,7 @@ const BuySell = () => {
 
     if (confirm.isConfirmed) {
       try {
-        const res = await fetch(`http://localhost:5000/api/products/${id}`, {
+        const res = await fetch(`https://kishaann-backend.onrender.com/api/products/${id}`, {
           method: "DELETE",
         });
         const data = await res.json();
@@ -101,7 +101,7 @@ const BuySell = () => {
                 <td>
                   {p.image ? (
                     <img
-                      src={`http://localhost:5000/uploads/${p.image}`}
+                      src={`https://kishaann-backend.onrender.com/uploads/${p.image}`}
                       alt={p.commodity}
                       width="70"
                     />
