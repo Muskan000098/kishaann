@@ -17,7 +17,7 @@ const PopupModal = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/api/newsletter", {
+      const res = await fetch("https://kishaann-backend.onrender.com/api/newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, name }), // 👈 नाम भी भेज रहे हैं
