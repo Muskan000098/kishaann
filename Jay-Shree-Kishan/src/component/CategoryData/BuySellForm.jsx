@@ -5,7 +5,7 @@ import "./BuySellForm.css";
 const stateDistricts = {
   "UP": ["Agra", "Lucknow", "Varanasi", "Kanpur", "Noida", "Prayagraj", "Ghaziabad", "Aligarh", "Meerut", "Bareilly", "Gorakhpur", "Moradabad", "Saharanpur"],
   "MH": ["Mumbai", "Pune", "Nagpur", "Nashik", "Aurangabad", "Thane", "Kolhapur", "Solapur", "Amravati", "Satara"],
-  "RJ": ["Jaipur", "Udaipur", "Jodhpur", "Kota", "Ajmer", "Bikaner", "Alwar", "Sikar", "Bharatpur"],
+  "RJ": ["Jaipur","Khairthal", "Udaipur", "Jodhpur", "Kota", "Ajmer", "Bikaner", "Alwar", "Sikar", "Bharatpur"],
   "DL": ["New Delhi", "North Delhi", "South Delhi", "East Delhi", "West Delhi", "Central Delhi", "Shahdara"],
   "GJ": ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Gandhinagar", "Bhavnagar", "Junagadh", "Kutch"],
   "MP": ["Bhopal", "Indore", "Gwalior", "Jabalpur", "Ujjain", "Sagar", "Satna", "Rewa"],
