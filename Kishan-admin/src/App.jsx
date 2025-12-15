@@ -37,7 +37,7 @@ const App = () => {
                     <Route path='/list' element={<List url={url}/>}/>
                     <Route path='/buysell' element={<BuySell url={url}/>}/>
                     <Route path='/orders' element={<Orders url={url}/>}/>
-                    <Route path='/subscriber' element={<Subscribers url="http://localhost:5000"/>}/>
+                    <Route path='/subscriber' element={<Subscribers url="https://kishaann-backend.onrender.com"/>}/>
                   </Routes>
                 </div>
               </div>
