@@ -12,7 +12,7 @@ const ProductDetail = () => {
     const fetchProduct = async () => {
       debugger
       try {
-        const res = await fetch(`http://localhost:5000/api/products/${id}`);
+        const res = await fetch(`https://kishaann-backend.onrender.com/api/products/${id}`);
         const data = await res.json();
 
         if (res.ok && data.success) {
@@ -38,7 +38,7 @@ const ProductDetail = () => {
       <div className="product-image">
         {product.image ? (
           <img
-            src={`http://localhost:5000/uploads/${product.image}`}
+            src={`https://kishaann-backend.onrender.com/uploads/${product.image}`}
             alt={product.commodity}
           />
         ) : (
