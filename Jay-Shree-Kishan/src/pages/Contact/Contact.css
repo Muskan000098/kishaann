@@ -1,0 +1,133 @@
+/* Main container */
+.contact-container {
+  min-height: 100vh;
+  background: #ffffff; 
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+
+.contact {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 40px;
+  background-color: #f1f1f1;
+  margin-left: 60px;
+  margin-top: 20px;
+  padding: 10px 10px;
+}
+
+/* Title */
+.contact-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #0b3c4b; 
+  margin-bottom: 30px;
+}
+
+/* Grid layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Location section */
+.location h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #222;
+}
+.location p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Form section */
+.contact-form h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.required {
+  color: red;
+  margin-right: 4px;
+}
+
+/* Button aligned bottom-right */
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  background: #28a745;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #218838;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .button-wrapper {
+    justify-content: center;
+  }
+  .contact {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 40px;
+  background-color: #f1f1f1;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 10px 10px;
+}
+}

@@ -1,0 +1,315 @@
+/* Global */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+}
+.containers{
+  margin: 60px;
+  padding: 10px;
+}
+/* Layout */
+.brand {
+  display: flex;
+  gap: 30px;
+  padding: 20px 0px;
+  flex-wrap: wrap;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  height: fit-content;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 15px;
+  background-color: #f0f0f0;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.sidebar-list li {
+  font-size: 15px;
+  color: #333;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar-list li:hover {
+  color: #4caf50;
+}
+.breadcrumb {
+  display: flex;
+  align-items: last ;
+  background: #f3f3f3;
+  padding: 8px 20px;
+  max-width: 100%;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #2c2c2c;
+  font-weight: 500;
+  
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.breadcrumb-item:hover {
+  color: #4caf50; 
+
+}
+
+.home-icon {
+  font-size: 16px;
+  color: #2c2c2c;
+}
+.home-icon:hover{
+  color: #4caf50; 
+}
+
+.breadcrumb-separator {
+  margin: 0 10px;
+  color: #3f3a3a;
+}
+
+.breadcrumb-item.active {
+  font-weight: 400;
+  color: #000000;
+}
+.breadcrumb-item.active:hover {
+  color: #4caf50;
+} 
+
+
+.brand-main {
+  flex: 1;
+  min-width: 280px;
+}
+
+.brand-heading {
+  font-size: 38px;
+  font-weight: 460;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.brand-index {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+
+  margin-left: 30px;
+}
+
+.brand-index a {
+  margin: 0 8px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.brand-index a:hover {
+  color: #4caf50;
+}
+
+.brand-list {
+ text-align: left;
+
+float: left; 
+  gap: 190px;
+}
+
+.brand-box {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  width: 500px;
+  float: left;
+  margin: 20px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.brand-box h4 {
+  background: #f4f4f4;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.brand-box p {
+  font-size: 15px;
+  margin: 4px 0;
+  color: #333;
+ 
+  cursor: pointer;
+  transition: 0.3s;
+}
+.brand-box span {
+  font-size: 15px;
+  margin: 4px 0;
+  color: #333;
+  margin-left: 250px;
+  margin-top: -20px;
+  cursor: pointer;
+  float: left;
+  transition: 0.3s;
+}
+
+.brand-box p:hover {
+  color: #4caf50;
+}
+.brand-box span:hover {
+  color: #4caf50;
+}
+/* ✅ Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+
+  .brand {
+    margin-left: 200px;
+    flex-direction: column; /* Sidebar goes on top */
+  }
+
+  .sidebar {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .sidebar-title {
+   text-align: left;
+   margin-left: 10px;
+   font-size: 20px; 
+    margin-bottom: 20px;
+  }
+   .sidebar-list {
+  
+ 
+   font-size: 20px; 
+ 
+  }
+
+  .brand-box {
+    width: 100%;   /* Full width cards */
+    margin: 10px 0;
+  }
+
+  .brand-box span {
+    margin-left: auto;   /* move to right edge */
+    float: none;
+    display: block;
+    text-align: right;
+    margin-top: 0;
+  }
+.brand-box span {
+  
+  margin-left: 300px;
+  margin-top: -20px;
+
+  float: left;
+  
+}
+  .brand-heading {
+    font-size: 28px;
+    text-align: center;
+    margin-left: -250px;
+  }
+  .brand-list{
+    width: 660px;
+  }
+  .breadcrumb {
+    font-size: 13px;
+    padding: 6px 12px;
+    margin-left: 200px;
+    width: 700px;
+    flex-wrap: wrap;   /* Allow wrapping */
+  }
+}
+
+/* ✅ Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .brand {
+    margin-left: 300px;
+    flex-direction: column; /* Sidebar goes on top */
+  }
+
+  .sidebar {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 100px;
+  }
+  .sidebar-title {
+   text-align: left;
+   margin-left: 10px;
+   font-size: 20px; 
+    margin-bottom: 20px;
+  }
+   .sidebar-list {
+
+   font-size: 20px; 
+ 
+  }
+
+  .brand-box {
+    width: 100%;   /* Full width cards */
+    margin: 10px 100px;
+  }
+
+  .brand-box span {
+    margin-left: auto;   /* move to right edge */
+    float: none;
+    display: block;
+    text-align: right;
+    margin-top: 0;
+  }
+.brand-box span {
+  
+  margin-left: 200px;
+  margin-top: -20px;
+
+  float: left;
+  
+}
+  .brand-heading {
+    font-size: 28px;
+    text-align: center;
+    margin-left: -300px;
+    margin-bottom: 40px;
+  }
+  .brand-list{
+    width: 460px;
+
+  }
+  .breadcrumb {
+    font-size: 13px;
+    padding: 6px 12px;
+    margin-left: 400px;
+    width: 500px;
+    flex-wrap: wrap;   /* Allow wrapping */
+  }
+  .brand-index{
+    margin-left: 110px;
+  }
+}

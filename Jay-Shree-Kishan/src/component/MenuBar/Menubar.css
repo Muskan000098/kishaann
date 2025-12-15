@@ -1,0 +1,266 @@
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.product-options{
+  display: flex;
+  
+  gap: 15px;
+  margin-top: 10px;
+ 
+}
+/* .select1{
+  padding: 16px 10px;
+  border-radius: 1px;
+  border: 1px solid #dedede;
+  font-size: 17px;
+} */
+
+.menu-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 180px;
+}
+
+.menu-links li a {
+  text-decoration: none;
+  color: #2d3e50;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu-links li a:hover {
+  color: #63c17d;
+}
+
+.gift-btn {
+  background: #63c17d;
+  border: none;
+  padding: 10px 18px;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.gift-btn:hover {
+  background: #52a86a;
+}
+
+.gift-icon {
+  font-size: 16px;
+}
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .menu-links {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-bar {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .menu-links.active {
+    display: flex;
+  }
+
+  .gift-btn {
+    margin-left: auto;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-links li a {
+    font-size: 14px;
+  }
+  .gift-btn {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+}
+
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.menu-links li {
+  position: relative;
+}
+
+.menu-links a,
+.menu-links button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-links button:focus {
+  outline: none;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  list-style: none;
+  padding: 10px 0;
+  width: 200px;
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #f5f5f5;
+}
+
+/* Submenu */
+.sub-dropdown {
+  position: relative;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  list-style: none;
+  padding: 10px 0;
+  width: 180px;
+  z-index: 110;
+}
+
+.sub-menu li {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.sub-menu li:hover {
+  background: #f5f5f5;
+}
+
+/* Gift button */
+.gift-btn {
+ background: #63c17d;
+  border: none;
+  padding: 10px 18px;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.gift-btn:hover {
+  background: #e63c3c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    border-top: 1px solid #eee;
+  }
+
+  .menu-links.active {
+    display: flex;
+  }
+
+  .dropdown-menu,
+  .sub-menu {
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+  }
+}
