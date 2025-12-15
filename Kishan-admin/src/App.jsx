@@ -12,7 +12,7 @@ import AdminRoute from './components/AdminRoute'
 import Login from './pages/Login'
 
 const App = () => {
-  const url = "http://localhost:4000"
+  const url = "https://kishaann-backend.onrender.com"
 
   return (
     <div>
