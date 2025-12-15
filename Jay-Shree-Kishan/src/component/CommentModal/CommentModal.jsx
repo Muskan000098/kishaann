@@ -17,7 +17,7 @@ const CommentModal = ({ productId }) => {
 
   const fetchCount = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/comments/count/${productId}`);
+      const res = await axios.get(`https://kishaann-backend.onrender.com/api/comments/count/${productId}`);
       setCount(res.data.count);
     } catch (error) {
       console.error("Error fetching count:", error);
@@ -31,7 +31,7 @@ const CommentModal = ({ productId }) => {
 
     try {
       // ✅ Send data to backend with productId
-      const res = await axios.post("http://localhost:5000/api/comments", {
+      const res = await axios.post("https://kishaann-backend.onrender.com/api/comments", {
         productId,
         name,
         comment,
