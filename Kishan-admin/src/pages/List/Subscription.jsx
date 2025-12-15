@@ -8,7 +8,7 @@ const Subscription = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/payment/all");
+        const res = await fetch("https://kishaann-backend.onrender.com/api/payment/all");
         const data = await res.json();
         setOrders(data);
       } catch (err) {
