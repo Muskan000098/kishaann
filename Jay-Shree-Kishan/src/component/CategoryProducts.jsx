@@ -6,7 +6,7 @@ const CategoryProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products?category=${category}`)
+    fetch(`https://kishaann-backend.onrender.com/api/products?category=${category}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
@@ -29,7 +29,7 @@ const CategoryProducts = () => {
             <div key={p._id} className="product-card">
               {p.image && (
                 <img
-                  src={`http://localhost:5000/uploads/${p.image}`}
+                  src={`https://kishaann-backend.onrender.com/uploads/${p.image}`}
                   alt={p.commodity}
                   className="product-img"
                 />
