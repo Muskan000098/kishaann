@@ -9,7 +9,7 @@ function MyProducts() {
  const [products, setProducts] = useState([]);
  
    useEffect(() => {
-     fetch("http://localhost:5000/api/products")
+     fetch("https://kishaann-backend.onrender.com/api/products")
        .then((res) => res.json())
        .then((data) => {
          if (data.success) {
@@ -33,7 +33,7 @@ function MyProducts() {
                {/* Product Image */}
                {p.image && (
                  <img
-                   src={`http://localhost:5000/uploads/${p.image}`}
+                   src={`https://kishaann-backend.onrender.com/uploads/${p.image}`}
                    alt={p.commodity}
                    className="product-img"
                  />

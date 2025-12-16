@@ -27,7 +27,7 @@ const Payment = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/payment/order", {
+      const res = await fetch("https://kishaann-backend.onrender.com/api/payment/order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ amount, currency }),
@@ -46,7 +46,7 @@ const Payment = () => {
         handler: async function (response) {
           showAlert("Payment Successful!");
           
-          const verifyRes = await fetch("http://localhost:5000/api/payment/verify", {
+          const verifyRes = await fetch("https://kishaann-backend.onrender.com/api/payment/verify", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(response),
