@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./MenuBar.css";
+import "./Menubar.css";
 import { FaGift, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import FestivalGiftOffers from "../FestivalGiftOffers/FestivalGiftOffers"; // ✅ import here
