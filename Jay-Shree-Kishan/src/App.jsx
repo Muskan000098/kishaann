@@ -19,7 +19,9 @@ import CategoryPage from './component/CategoryData/Categories'
 import EggRateTable from './component/CategoryData/EggRateTable'
 import SignUp from './component/AccountPage/SingUp'
 import { UserProvider } from './component/UserContext'
+
 import Payment from './pages/Payment'
+
 import LoadingPage from './component/LoadingPage/LoadingPage'
 import MyProducts from './component/CategoryData/MyProducts'
 import ProductList from './component/CategoryData/ProductList'
@@ -58,6 +60,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
+           <Route path="/products" element={<Products/>} />
           <Route path='/productpage' element={<ProductPage />} />
           <Route path='/brandPage' element={<BrandPage />} />
           <Route path='/special' element={<Special />} />
