@@ -115,14 +115,14 @@ const Navbar = () => {
         </div>
 
         {/* Cart */}
-        <div className="icon-box">
+        {/* <div className="icon-box">
           <FaShoppingCart className="icon" />
           <span className="count">0</span>
           <span className="cart-text">
             My Cart <br />
             <span className="highlight">$0.00</span>
           </span>
-        </div>
+        </div> */}
       </div>
 
       
