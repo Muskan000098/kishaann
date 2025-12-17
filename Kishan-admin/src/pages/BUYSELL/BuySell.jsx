@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./buysell.css";
+import "./BuySell.css";
 import Swal from "sweetalert2";
 
 const BuySell = () => {
