@@ -148,3 +148,109 @@
 .actions button:hover {
   background: #27ae60;
 }
+
+
+/* ================= Tablet & Small Laptop ================= */
+@media (max-width: 1024px) {
+
+  .special-offers {
+    padding: 15px;
+  }
+
+  .offers-header {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .options select {
+    margin-left: 40px;
+    width: 220px;
+  }
+
+  .offers-list.grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .product-img {
+    height: 190px;
+  }
+}
+
+
+/* ================= Tablet ================= */
+@media (max-width: 768px) {
+
+  .special-offers {
+    padding: 12px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .offers-header {
+    flex-wrap: wrap; /* design same, bas wrap allow */
+    gap: 10px;
+  }
+
+  .options select {
+    margin-left: 20px;
+    width: 200px;
+  }
+
+  .product-img {
+    height: 180px;
+  }
+
+  .offer-info h3 {
+    font-size: 17px;
+  }
+
+  .new-price {
+    font-size: 18px;
+  }
+}
+
+
+/* ================= Mobile ================= */
+@media (max-width: 480px) {
+
+  .special-offers {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .offers-header {
+    height: auto;
+    padding: 8px;
+  }
+
+  .options select {
+    margin-left: 0;   /* bas overflow fix */
+    width: 100%;
+  }
+
+  .offers-list.grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .product-img {
+    height: 170px;
+  }
+
+  .offer-info h3 {
+    font-size: 16px;
+  }
+
+  .offer-info .desc {
+    font-size: 13px;
+  }
+
+  .actions button {
+    padding: 7px;
+    font-size: 14px;
+  }
+}

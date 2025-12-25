@@ -313,3 +313,92 @@ float: left;
     margin-left: 110px;
   }
 }
+
+
+
+@media (max-width: 992px) {
+
+  .containers {
+    margin: 30px;
+  }
+
+  .brand {
+    margin-left: 0; /* overflow fix */
+  }
+
+  .sidebar {
+    width: 240px;
+  }
+
+  .brand-heading {
+    font-size: 30px;
+    margin-left: 0;
+  }
+
+  .brand-list {
+    width: 100%;
+  }
+
+  .brand-box {
+    width: 460px;   /* desktop jaisa hi */
+    margin: 15px;
+  }
+
+  .brand-box span {
+    margin-left: 240px;
+    margin-top: -20px;
+    float: left;
+  }
+
+  .breadcrumb {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .containers {
+    margin: 15px;
+  }
+
+  .brand {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .brand-heading {
+    font-size: 26px;
+    margin-left: 0;
+  }
+
+  .brand-list {
+    width: 100%;
+  }
+
+  .brand-box {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .brand-box span {
+    margin-left: 200px;
+    margin-top: -20px;
+    float: left;
+  }
+
+  .breadcrumb {
+    width: 100%;
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  .brand-index {
+    margin-left: 20px;
+  }
+}

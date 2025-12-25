@@ -1,16 +1,19 @@
 import express from "express";
-import {
-  createProduct,
-  getMyProducts,
-} from "../controllers/productController.js";
+import {createProduct, getMyProducts} from "../controllers/productController.js";
 import protect from "../Middleware/authMiddleware.js";
-import upload from "../Middleware/upload.js";
+
 import Product from "../models/Product.js"; // ✅ model imported
+import upload from "../config/Cloudinary.js";
 
 const router = express.Router();
 
 // ✅ Create Product (with image upload + auth)
-router.post("/", protect, upload.single("image"), createProduct);
+router.post(
+  "/",
+  protect,
+  upload.single("image"),
+  createProduct
+);
 
 // ✅ Get logged-in user's products
 router.get("/my", protect, getMyProducts);

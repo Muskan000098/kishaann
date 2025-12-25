@@ -109,7 +109,7 @@
 }
 
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .feature-card {
     padding: 15px;
   }
@@ -118,5 +118,91 @@
   }
   .feature-card p {
     font-size: 13px;
+  }
+} */
+
+
+@media (max-width: 1024px) {
+
+  .features-section {
+    padding: 40px 20px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .features-grid,
+  .m-features-grid {
+    gap: 30px;
+  }
+
+  .feature-card,
+  .m-feature-card {
+    max-width: 260px;
+  }
+
+  .features-section h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .features-section {
+    padding: 35px 15px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .features-grid,
+  .m-features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+  }
+
+  .feature-card,
+  .m-feature-card {
+    max-width: 240px;
+    padding: 22px;
+  }
+
+  .feature-icon {
+    font-size: 28px;
+  }
+
+  .feature-card p {
+    font-size: 13.5px;
+  }
+
+  .toggle-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+
+  /* Parent layout */
+  .brand {
+    flex-direction: column;
+  }
+
+  /* Main content pehle */
+  .brand-main {
+    order: 1;
+    width: 100%;
+  }
+
+  /* Categories / Sidebar niche */
+  .sidebar {
+    order: 2;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Sidebar list alignment clean */
+  .sidebar-list {
+    margin-left: 20px;
   }
 }

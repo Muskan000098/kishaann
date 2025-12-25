@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 const productSchema = new mongoose.Schema({
+  user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   type: String,
   commodity: String,
   quantity: String,
@@ -15,9 +16,9 @@ const productSchema = new mongoose.Schema({
   isGraded: Boolean,
   isPacked: Boolean,
   isStoredAC: Boolean,
-  image: String,
+  image: String, // Cloudinary URL
   name: String,
   email: String,
-});
+}, { timestamps: true });
 
 export default mongoose.model("Product", productSchema);

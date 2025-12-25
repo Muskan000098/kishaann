@@ -1,10 +1,20 @@
 import Product from "../models/Product.js";
 
-// Create product
 export const createProduct = async (req, res) => {
+
+   console.log("BODY:", req.body);
+  console.log("FILE:", req.file);
+
   try {
+    if (!req.file) {
+      return res.status(400).json({
+        success: false,
+        error: "Image is required",
+      });
+    }
+
     const product = await Product.create({
-      user: req.user._id, // 🔑 Save logged-in user ID
+      user: req.user._id,
       type: req.body.type,
       commodity: req.body.commodity,
       quantity: req.body.quantity,
@@ -19,25 +29,29 @@ export const createProduct = async (req, res) => {
       isGraded: req.body.isGraded,
       isPacked: req.body.isPacked,
       isStoredAC: req.body.isStoredAC,
-      image: req.body.image,
+      image: req.file.path, // 🔥 Cloudinary URL
       name: req.body.name,
       email: req.body.email,
     });
 
-    res.status(201).json({ success: true, product });
+    res.status(201).json({
+      success: true,
+      product,
+    });
   } catch (error) {
     console.error("Create Product Error:", error);
-    res.status(500).json({ success: false, error: "Server Error" });
+    res.status(500).json({
+      success: false,
+      error: "Server Error",
+    });
   }
 };
 
-// Get my products
 export const getMyProducts = async (req, res) => {
   try {
     const products = await Product.find({ user: req.user._id });
     res.json({ success: true, products });
   } catch (error) {
-    console.error("Fetch My Products Error:", error);
-    res.status(500).json({ success: false, error: "Server Error" });
+    res.status(500).json({ success: false });
   }
 };

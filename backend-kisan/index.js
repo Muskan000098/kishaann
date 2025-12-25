@@ -22,6 +22,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
+
+
+
+console.log("CLOUDINARY_NAME =", process.env.CLOUDINARY_NAME);
+console.log("CLOUDINARY_API_KEY =", process.env.CLOUDINARY_API_KEY);
+
 // MongoDB connect
 mongoose
   .connect(process.env.MONGO_URI, { dbName: "jayshreekisan" })

@@ -57,7 +57,7 @@ const BuySellForm = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+ const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
@@ -66,8 +66,13 @@ const BuySellForm = () => {
         formDataToSend.append(key, formData[key]);
       }
 
+      const token = localStorage.getItem("token"); 
+
       const res = await fetch("https://kishaann-backend.onrender.com/api/products", {
         method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`, 
+        },
         body: formDataToSend,
       });
 

@@ -133,7 +133,7 @@
   }
   .navbar-search input,
   .navbar-search button {
-    padding: 8px;
+    padding: 8px 20px;
     font-size: 14px;
   }
   .account span,

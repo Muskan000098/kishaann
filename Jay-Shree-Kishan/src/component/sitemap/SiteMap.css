@@ -94,3 +94,56 @@
 .scrollTop:hover {
   background: darkgreen;
 }
+
+
+@media (max-width: 992px) {
+
+  .sitemap-container {
+    max-width: 100%;
+  }
+
+  .sitemap-content {
+    gap: 40px; /* thoda compact */
+  }
+
+  .sitemap-title {
+    font-size: 20px;
+  }
+
+  .breadcrumb {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .sitemap-wrapper {
+    padding: 15px;
+  }
+
+  .sitemap-container {
+    max-width: 100%;
+  }
+
+  .sitemap-content {
+    gap: 25px; /* same row layout, bas gap kam */
+  }
+
+  .sitemap-title {
+    font-size: 18px;
+  }
+
+  .breadcrumb {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .scrollTop {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    right: 15px;
+    bottom: 15px;
+  }
+}
